@@ -259,7 +259,7 @@ input[type="time"]::-webkit-calendar-picker-indicator{filter:invert(0.6) sepia(1
 <!-- HEADER -->
 <header class="app-header">
   <span class="header-logo">NJ</span>
-  <span class="header-title">Bus Tracker</span>
+  <span class="header-title">Kuilan Bus Tracker</span>
   <div class="live-pill" id="livePill">OFFLINE</div>
   <button class="btn-hdr-logout" id="logoutBtn" onclick="logout()">Log out</button>
 </header>
@@ -335,7 +335,7 @@ input[type="time"]::-webkit-calendar-picker-indicator{filter:invert(0.6) sepia(1
         <span class="spinner cb-loader" style="width:14px;height:14px;border-width:1.5px;border-top-color:var(--success)"></span>
         <div class="cb-icon-wrap"><span class="cb-icon">🏠</span></div>
         <div class="cb-title">Going Home</div>
-        <div class="cb-sub">Port Authority<br>→ W Milford P&R</div>
+        <div class="cb-sub">Port Authority<br>→ W Milford P&R (GREENWOOD LAKE TWP)</div>
       </button>
     </div>
 
@@ -464,14 +464,14 @@ const COMMUTE = {
   work: {
     route: '196',
     direction: 'New York',
-    origin: { busstopnumber:'27887', busstopdescription:'W MILFORD P&R (GREENWOOD LAKE)' },
+    origin: { busstopnumber:'27887', busstopdescription:'W MILFORD P&R (GREENWOOD LAKE TWP)' },
     dest:   { busstopnumber:'31757', busstopdescription:'PORT AUTHORITY BUS TERMINAL' }
   },
   home: {
     route: '196',
     direction: 'Warwick',
     origin: { busstopnumber:'31757', busstopdescription:'PORT AUTHORITY BUS TERMINAL' },
-    dest:   { busstopnumber:'27887', busstopdescription:'W MILFORD P&R (GREENWOOD LAKE)' }
+    dest:   { busstopnumber:'27887', busstopdescription:'W MILFORD P&R (GREENWOOD LAKE TWP)' }
   },
   // Fallback for Going Home: if Route 196 returns no trips, auto-retry with Route 197
   homeFallback: {
